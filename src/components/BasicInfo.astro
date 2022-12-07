@@ -1,0 +1,12 @@
+---
+import IconTextContainer from "./IconTextContainer.astro";
+import SingleIcon from "./SingleIcon.astro";
+
+const { icon, info } = Astro.props;
+---
+
+<IconTextContainer>
+    <SingleIcon>{icon}</SingleIcon>
+    {info ? <div class="text-base font-normal">{info}</div> : null}
+    <slot />
+</IconTextContainer>
