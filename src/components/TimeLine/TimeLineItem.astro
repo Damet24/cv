@@ -23,6 +23,9 @@ const { time, title, description, link } = Astro.props;
   <p class="mb-1 text-base font-normal text-gray-500">
     {description}
   </p>
+  <p class="mb-1 text-base font-normal text-gray-500">
+    <slot />
+  </p>
 
   {
     time ? (
