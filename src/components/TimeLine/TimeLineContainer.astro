@@ -1,8 +1,14 @@
 ---
-const { title } = Astro.props;
+const { title, icon } = Astro.props;
 ---
 
 <ol class="mx-4 p-4 relative border-l border-gray-200 dark:border-gray-700">
-    {title ? <h1 class="ml-2 text-2xl font-extrabold"><pre>{title}</pre></h1> : null}
+    {title ? <h1 class="ml-2 text-2xl font-extrabold font"><pre>{icon ? <span class="font">{icon}</span> : null}{title}</pre></h1> : null}
     <slot />
 </ol>
+
+<style>
+    .font {
+        font-family: JetBrainsMono Nerd Font;
+    }
+</style>

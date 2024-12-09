@@ -14,7 +14,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
   <section class="my-8 flex h-full">
     <aside class="w-1/3 p-8">
-      <div class="shadow-lg shadow-sky-100 bg-sky-100 rounded-3xl p-4">
+      <div class="p-4">
         <AsideSection title="Contactame">
           <BasicInfo icon=" " info="+57 3197089652" />
 
@@ -87,7 +87,7 @@ import Layout from "../layouts/Layout.astro";
     </aside>
     <main class="p-4 w-2/3">
       <CustomSection>
-        <p class="text-lg font-normal text-justify">
+        <p class="text-lg font-normal">
           Soy un desarrollador Full Stack con un enfoque predominante en el
           backend. Priorizo el código limpio, las mejores prácticas y la Clean
           Architecture. Poseo amplia experiencia en Material Design y desarrollo
@@ -96,7 +96,7 @@ import Layout from "../layouts/Layout.astro";
       </CustomSection>
 
       <CustomSection>
-        <TimeLineContainer title="󱒔 Experiencia Laboral">
+        <TimeLineContainer title="Experiencia Laboral" icon="󰃖 ">
           <TimeLineContainer>
             <TimeLineItem
               title="Software Developer"
@@ -114,12 +114,12 @@ import Layout from "../layouts/Layout.astro";
                 DynamoDB y Redshift, para asegurar la eficiencia y la robustez
                 de las aplicaciones.
               </p>
-              <p class="text-3xl">
+              <!-- <p class="text-3xl">
                 <span class="text-cyan-400">󰪮</span>
                 <span class="text-orange-400 mr-2"></span>
                 <span class="text-red-400 text-5xl align-middle"></span>
                 <span class="text-green-400"></span>
-              </p>
+              </p> -->
             </TimeLineItem>
             <TimeLineItem
               title="Fullstack Web Developer"
@@ -136,23 +136,23 @@ import Layout from "../layouts/Layout.astro";
                 variedad de tecnologías, incluyendo React, PHP y JavaScript,
                 adaptándome a las necesidades específicas de cada proyecto.
               </p>
-              <p class="text-3xl">
+              <!-- <p class="text-3xl">
                 <span class="text-blue-400 text-5xl align-middle"></span>
                 <span class="text-cyan-400"></span>
                 <span class="text-yellow-400"></span>
                 <span class="text-red-400"></span>
-              </p>
+              </p> -->
             </TimeLineItem>
           </TimeLineContainer>
         </TimeLineContainer>
 
-        <TimeLineContainer title="  Educacion">
+        <TimeLineContainer title="Educacion" icon="  ">
           <TimeLineContainer>
             <TimeLineItem
               title="Web Developer"
               description="Platzi"
               time="Julio 2020 — actualidad"
-            />
+            >Ruta de Desarrollo Backend</TimeLineItem>
             <TimeLineItem
               title="Tecnico Profesional, Corparacion Bolivariana Del Norte, Santa Marta"
               description="Desarrollo de Software y Aplicaciones Móviles"
@@ -166,7 +166,7 @@ import Layout from "../layouts/Layout.astro";
           </TimeLineContainer>
         </TimeLineContainer>
 
-        <TimeLineContainer title=" Cursos">
+        <TimeLineContainer title="Cursos" icon=" ">
           <TimeLineContainer>
             <TimeLineItem
               title="Curso Profesional de JavaScript"
@@ -176,6 +176,11 @@ import Layout from "../layouts/Layout.astro";
             <TimeLineItem
               title="Curso de Docker"
               description="Guido Vilariño - Platzi"
+            />
+
+            <TimeLineItem
+              title="Ultimate Python: de cero a programador experto"
+              description="Nicolas Schurmann"
             />
           </TimeLineContainer>
         </TimeLineContainer>
